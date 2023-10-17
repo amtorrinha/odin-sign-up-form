@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="img-section">
+        <img src="./images/background.jpg" class="background">
+        <div class="img-div">
+            <img src="./images/odin-lined.png" class="odin-logo">
+            <div class="odin-div">ODIN</div>
+        </div>
+        <div class="img-artist-div">
+            <div class="artist-div">Photo by <a href="https://unsplash.com/@cathy_jqy" target="_blank">Cathy Jiang</a> on 
+                <a href="https://unsplash.com/" target="_blank">Unsplash</a> </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="top-section">This is not a real online service! You know you need something like this 
+            in your life to help you realize your deepest dreams.<br />Sign up <em>now</em> to get started.
+            <p>You <em>know</em> you want to.</p></div>
+        <div class="middle-section">
+            <div class="filler-div">Let's do this!</div>
+            <form id="myform" action="" method="post">
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" minlength="3" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" minlength="3" required>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{12}" minlength="9" required>
+                    </div>
+                </div>
+                <div class="form-div">
+                    <div class="input-div">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-section">
+            <button type="submit" form="myform">Create Account</button>
+            <div class="log-in">Already have an account? <a href="">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>
